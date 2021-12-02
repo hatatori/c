@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black bg-opacity-5">
+    <!-- https://github.com/hatatori?tab=repositories -->
+    
+    
+    <!-- parte 1 -->
+    <div class="flex justify-center">
+        <div class="transition shadow-md hover:shadow-2xl max-h-full p-6 my-5 rounded max-w-screen max-w-full bg-white w-500">
+
+            <p class="text-3xl pb-5">Dados</p>
+            
+            
+            <div class="flex">
+                <div class="flex-1 text-gray-400">Nome:</div>
+                <div class="flex-3">Herick Silva</div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-1 text-gray-400">E-mail:</div>
+                <div class="flex-3">kcireh.i@gmail.com</div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-1 text-gray-400">Localidade:</div>
+                <div class="flex-3">Fortaleza - Ceará</div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-1 text-gray-400">Linkedin:</div>
+                <div class="flex-3"><a class="underline" target="blank" href='https://www.linkedin.com/in/herick-silva-2020'>Linkedin</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- parte 2 -->
+    <div class="flex justify-center">
+        <div class="transition shadow-md hover:shadow-2xl max-h-full p-6 my-5 rounded max-w-screen max-w-full bg-white w-500">
+
+            <p class="text-3xl pb-5">Social media</p>
+            
+            <div class="grid grid-cols-2 gap-5">
+                <a class="flex items-center hover:bg-gray-200 rounded" target="blank" href="https://www.youtube.com/user/kcirehikazamay/videos">
+                    <img class="m-1 h-10" src="icons/youtube.svg">
+                    <p class="p-1">Canal youtube</p>
+                </a>
+                
+                <a class="flex items-center hover:bg-gray-200 rounded"  target="blank" href="https://github.com/hatatori?tab=repositories">
+                    <img class="m-1 h-10" src="icons/github.svg">
+                    <p class="p-1">Github</p>
+                </a>
+            </div>    
+        </div>
+    </div>
+
+
+    <!-- parte 3 -->
+    <div class="flex justify-center">
+        <div class="transition shadow-md hover:shadow-2xl max-h-full p-6 my-5 rounded max-w-screen max-w-full bg-white w-500">
+            <p class="text-3xl pb-5">Conhecimentos específicos</p>
+            <div class="grid grid-cols-2" id="lista_linguagens"></div>
+        </div>
+    </div>
+    
+    <!-- parte 4 -->
+    <div class="flex justify-center">
+        <div class="transition shadow-md hover:shadow-2xl max-h-full p-6 my-5 rounded max-w-screen max-w-full bg-white w-500">
+            <p class="text-3xl pb-5">Escritório</p>
+            <div class="grid grid-cols-2" id="lista_2"></div>
+        </div>
+    </div>
+
+    <!-- parte 5 -->
+    <div class="flex justify-center">
+        <div class="transition shadow-md hover:shadow-2xl max-h-full p-6 my-5 rounded max-w-screen max-w-full bg-white w-500">
+            <p class="text-3xl pb-5">Extra</p>
+            <div class="grid grid-cols-2" id="lista_3"></div>
+        </div>
+    </div>
+
+
+    <!-- parte 6 -->
+    <div class="flex justify-center">
+        <div class="transition shadow-md hover:shadow-2xl max-h-full p-6 my-5 rounded max-w-screen max-w-full bg-white w-500">
+            <p class="text-3xl pb-5">Artes</p>
+            <div class="grid grid-cols-3">
+                <img onclick="dialog_img.src = 'imgs_port/1.jpg'; openDialog() " src='imgs_port/1.jpg'>
+                <img onclick="dialog_img.src = 'imgs_port/2.jpg'; openDialog() " src='imgs_port/2.jpg'>
+                <img onclick="dialog_img.src = 'imgs_port/3.jpg'; openDialog() " src='imgs_port/3.jpg'>
+                <img onclick="dialog_img.src = 'imgs_port/4.jpg'; openDialog() " src='imgs_port/4.jpg'>
+                <img onclick="dialog_img.src = 'imgs_port/5.jpg'; openDialog() " src='imgs_port/5.jpg'>
+                <img onclick="dialog_img.src = 'imgs_port/6.jpg'; openDialog() " src='imgs_port/6.jpg'>
+            </div>            
+        </div>
+    </div>
+
+    <div id="dialog" class="fixed top-0 left-0 bg-black w-screen h-screen bg-opacity-50 flex justify-center items-center shadow-2xl hidden">
+        <p class="text-5xl text-shadow pb-5 text-white fixed top-0 right-10 font-mono cursor-pointer" id="dialog_bt_close">x</p>
+        <div class="rounded p-1 bg-white flex justify-center items-center" id="dialog_in">
+            <img id="dialog_img" src='imgs_port/5.jpg' style="max-width: 90vw; max-height: 90vh; ">
+        </div>
+    </div>
+
+
+    <!-- parte 7 -->
+    <div class="flex justify-center">
+        <div class="transition shadow-md hover:shadow-2xl max-h-full p-6 my-5 rounded max-w-screen max-w-full bg-white w-500">
+            <p class="text-3xl pb-5">Algumas aplicações</p>
+            
+            <div class="grid grid-cols-2 scale-1 transition">
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="https://hatatori.github.io/memoria/">Jogo da memória</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="https://hatatori.github.io/search-engine-system/">Sistema de busca</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="https://hatatori.github.io/portifolio/site%201/index.html">Site filmes 1</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="http://newspec.herokuapp.com/games/">Jogos download</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="https://hatatori.github.io/portifolio/filmes/index.html">Site filmes 2</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="https://hatatori.github.io/portifolio/petshop2/index.html">Petshop</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="http://newspec.herokuapp.com/lady%20kin">Arquiteta</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="https://hatatori.github.io/japones-treinar/">Aprendizado japonês</a></p>
+                <p class="p-1 m-2 rounded"><a class="p-3 hover:bg-gray-100 hover:shadow rounded block" target="blank" href="https://hatatori.github.io/workout/">Exercício</a></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+</body>
+
+<script src='js.js'></script>
+
+</html>
