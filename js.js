@@ -15,7 +15,8 @@ linguagens = [
     {img: "python", name:"python" },
     {img: "sass", name:"sass" },
     {img: "visualstudio", name:"visualstudio" },
-    {img: "vuejs", name:"vuejs" }
+    {img: "vuejs", name:"vuejs" },
+    {img: "php", name:"php" }
 ]
 
 extra = [
