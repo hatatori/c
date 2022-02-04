@@ -1,40 +1,42 @@
 
 linguagens = [
-    {img: "arduino", name:"arduino" },
-    {img: "bootstrap", name:"bootstrap" },
-    {img: "c", name:"c" },
-    {img: "css", name:"css" },
-    {img: "github", name:"github" },
-    {img: "html5", name:"html5" },
-    {img: "javascript", name:"javascript" },
-    {img: "mathploit", name:"mathploitlib" },
-    {img: "mysql", name:"mysql" },
-    {img: "npm", name:"npm" },
-    {img: "photoshop", name:"photoshop" },
-    {img: "premiere", name:"premiere" },
-    {img: "python", name:"python" },
-    {img: "sass", name:"sass" },
-    {img: "visualstudio", name:"visualstudio" },
-    {img: "vuejs", name:"vuejs" },
-    {img: "php", name:"php" }
+    {img: "arduino.svg"      , name:"arduino" },
+    {img: "bootstrap.svg"    , name:"bootstrap" },
+    {img: "c.svg"            , name:"c" },
+    {img: "css.svg"          , name:"css" },
+    {img: "github.svg"       , name:"github" },
+    {img: "html5.svg"        , name:"html5" },
+    {img: "javascript.svg"   , name:"javascript" },
+    {img: "mathploit.svg"    , name:"mathploitlib" },
+    {img: "mysql.svg"        , name:"mysql" },
+    {img: "npm.svg"          , name:"npm" },
+    {img: "photoshop.svg"    , name:"photoshop" },
+    {img: "premiere.svg"     , name:"premiere" },
+    {img: "python.svg"       , name:"python" },
+    {img: "sass.svg"         , name:"sass" },
+    {img: "visualstudio.svg" , name:"visualstudio" },
+    {img: "vuejs.svg"        , name:"vuejs" },
+    {img: "php.svg"          , name:"php" },
+    {img: "laravel.svg"      , name:"laravel" },
+    {img: "tailwindcss.svg"     , name:"tailwindcss" }
 ]
 
 extra = [
-    {img:"excel", name:"Excel"},
-    {img:"powerpoint", name:"Power Point"},
-    {img:"word", name:"word"},
+    {img:"excel.svg", name:"Excel"},
+    {img:"powerpoint.svg", name:"Power Point"},
+    {img:"word.svg", name:"word"},
 ]
 
 lista_3_obj = [
-    {img:"math", name:"Matemática"},
-    {img:"english", name:"English intermediate"},
+    {img:"math.svg", name:"Matemática"},
+    {img:"english.svg", name:"English intermediate"},
 ]
 
 function put(div, obj){
     for(i of obj){
         div.innerHTML += `
         <div class="flex items-center p-1">
-            <img class='mr-5 h-10' src='icons/${i.img}.svg'>
+            <img class='mr-5 h-10' src='icons/${i.img}' style='width:40px'>
             <p>${i.name}</p>
         </div>`
     }
