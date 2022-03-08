@@ -18,7 +18,8 @@ linguagens = [
     {img: "vuejs.svg"        , name:"vuejs" },
     {img: "php.svg"          , name:"php" },
     {img: "laravel.svg"      , name:"laravel" },
-    {img: "tailwindcss.svg"     , name:"tailwindcss" }
+    {img: "tailwindcss.svg"  , name:"tailwindcss" },
+    {img: "react.svg"        , name:"react" }
 ]
 
 extra = [
