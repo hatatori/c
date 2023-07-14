@@ -5,7 +5,7 @@ linguagens = [
     {img: "c.svg"            , name:"c" },
     {img: "css.svg"          , name:"css" },
     {img: "github.svg"       , name:"github" },
-    {img: "html5.svg"        , name:"html5" },
+    {img: "node.svg"         , name:"node" },
     {img: "javascript.svg"   , name:"javascript" },
     {img: "mathploit.svg"    , name:"mathploitlib" },
     {img: "mysql.svg"        , name:"mysql" },
