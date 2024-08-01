@@ -1,0 +1,42 @@
+
+.bg-gray{background-color: #1e1e1e;}
+
+.w-500{width: 500px; max-width: 100%;}
+
+.flex-1{flex: 1}
+.flex-2{flex: 2}
+.flex-3{flex: 3}
+.flex-4{flex: 4}
+.flex-5{flex: 5}
+
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.markdown{
+ display: grid;
+ gap: 1em;
+}
+
+.markdown h1{
+  font-size: 2em;
+  border-bottom: solid 1px #00000033;
+}
+
+.markdown h2{
+  font-size: 1.5em;
+}
